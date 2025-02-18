@@ -15,6 +15,26 @@ obj/
 *.sln.docstates
 
 
+[Bb]in/
+[Oo]bj/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+
+.nuget/
+
+
+.vs/
+.idea/
+
+
+*.csproj.user
+
+
 *.nupkg
 *.snupkg
 packages/
