@@ -17,7 +17,7 @@ internal class BaseTracker
         _httpClient = new();
     }
 
-    public async Task Track(WebhookPayload payload, string _channelHookId)
+    public async Task Track(WebhookPayload payload)
     {
         var payloadJson = JsonConvert.SerializeObject(payload);
 
