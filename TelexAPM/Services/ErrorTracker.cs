@@ -8,12 +8,12 @@ public interface IErrorTracker
     Task TrackAsync(Exception ex);
 }
 
-internal class ErrorTracker : IErrorTracker
+internal class ErrorTracker : BaseTracker, IErrorTracker
 {
-    private readonly string _channelHookId;
-    public ErrorTracker(string channelHookId)
+    public ErrorTracker(TelexConfiguration config)
+        : base()
     {
-        _channelHookId = channelHookId;
+        _config = config;
     }
 
     public async Task TrackAsync(Exception ex)

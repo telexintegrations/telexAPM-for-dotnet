@@ -10,18 +10,28 @@ public interface ITelexClient
 }
 
 
+public class TelexConfiguration
+{
+    public string ChannelHookId { get; set; }
+    public string BaseUrl { get; set; }
+}
+
+
+
 public class TelexClient : ITelexClient
 {
     private readonly ErrorTracker _errorTracker;
     private readonly PerformanceTracker _performanceTracker;
 
+    private readonly TelexConfiguration _config;
 
-    public TelexClient(string channelHookId)
+
+    public TelexClient(TelexConfiguration config)
     {
-        if (string.IsNullOrWhiteSpace(channelHookId)) throw new ArgumentNullException(nameof(channelHookId), "Channel Hook Id is required and cannot be empty");
+        _config = config ?? throw new ArgumentNullException(nameof(config));
 
-        _errorTracker = new(channelHookId);
-        _performanceTracker = new(channelHookId);
+        _errorTracker = new(_config);
+        _performanceTracker = new(_config);
 
     }
 

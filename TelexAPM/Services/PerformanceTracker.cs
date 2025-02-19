@@ -7,13 +7,13 @@ public interface IPerformanceTracker
     Task TrackAsync(string MetricName, TimeSpan duration);
 }
 
-internal class PerformanceTracker : IPerformanceTracker
+internal class PerformanceTracker : BaseTracker, IPerformanceTracker
 {
-    private readonly string _channelHookId;
 
-    public PerformanceTracker(string channelHookId)
+    public PerformanceTracker(TelexConfiguration config)
+        : base()
     {
-        _channelHookId = channelHookId;
+        _config = config;
     }
 
     public async Task TrackAsync(string metricName, TimeSpan duration)
