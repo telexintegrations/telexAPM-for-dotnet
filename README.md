@@ -96,7 +96,7 @@ Add the following section to your appsettings.json file:
   - Console Applications
 
 ```cs
-using TelexAPM.Services
+using TelexAPM.Services;
 using Microsoft.Extensions.Configuration;
 
 class Program
