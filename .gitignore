@@ -57,3 +57,4 @@ secrets.json
 .DS_Store
 
 project.lock.json
+appsettings.json
