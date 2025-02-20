@@ -186,6 +186,16 @@ TelexAPM includes extensions for easy integration with ASP.NET Core applications
 
 The APM automatically tracks request performance and catches unhandled exceptions and report/sends to your Telex Channel
 
+
+## 📸 Screenshots
+
+### Test Code
+![Test Code](https://dotnet-apm.onrender.com/IMG_2897.jpeg)
+
+### Message Screenshot In Telex
+![Telex Screenshot](https://dotnet-apm.onrender.com/IMG_2895.jpeg)
+
+
 ## 🚀 Telex Dotnet APM Integration Guide
 
 Follow these steps to configure your Telex channel to use the Dotnet APM:
@@ -196,7 +206,10 @@ This assumes you have an organisation and channel created!
 ### 🛠️ Step 1: Install the Dotnet APM Application
 
 - Go to your **Telex dashboard**.
-- Install the **Dotnet APM** application.
+- Install the **Dotnet APM** application:
+  - The application url: https://dotnet-apm.onrender.com
+  - The application integration json url: https://dotnet-apm.onrender.com/integration.json
+  - The application target url: https://dotnet-apm.onrender.com/target_url (This url will be called by telex)
 
 ---
 
