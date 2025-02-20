@@ -33,8 +33,12 @@ telexapm-for-dotnet/
 │   │   ├── ErrorTracker.cs                   #Internal - Clients should  not access this directly
 │   │   ├── PerformanceTracker.cs             #Internal - Clients should  not access this directly
 │   │   └── TelexClient.cs                    #Public API - Accessible to Clients
-│   │
-├── ├── TelexAPM.csproj
+|   |
+|   ├── TelexAPM.ConsoleTest/                 #Models for Data to be sent
+│   │   ├── appsettings.json
+│   │   ├── Program.cs
+│   │   └── TelexApm.ConsoleTest.csproj
+│   ├── TelexAPM.csproj
 │
 ├── TelexAPM.Tests/
 │   ├── TelexMiddlewareTest.cs               # API endpoint tests
