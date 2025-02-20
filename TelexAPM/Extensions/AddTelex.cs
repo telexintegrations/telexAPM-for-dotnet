@@ -9,7 +9,7 @@ public static class TelexServiceCollectionExtensions
 {
     public static IServiceCollection AddTelex(this IServiceCollection services, IConfiguration Configuration)
     {
-        var webhookChannelId = Configuration["Telex:WebhookChannelId"];
+        var webhookChannelId = Configuration["Telex:ChannelHookId"];
         var baseUrl = Configuration["Telex:BaseUrl"];
 
         TelexConfiguration telexContainerConfig = new TelexConfiguration
