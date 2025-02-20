@@ -153,7 +153,7 @@ using TelexAPM.Extensions;
 
 // ...
 
-app.UseMiddleware<TelexMiddleWare>();
+app.UseTelex();
 ```
 
 ## API Reference
