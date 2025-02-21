@@ -33,7 +33,7 @@ internal class ErrorTracker : BaseTracker, IErrorTracker
 
             var payload = new WebhookPayload
             {
-                EventName = "ErrorTracker POST",
+                EventName = ".NET APM",
                 Message = JsonConvert.SerializeObject(errorReport),
                 Status = "success",
                 Username = "channel"

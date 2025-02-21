@@ -30,7 +30,7 @@ internal class PerformanceTracker : BaseTracker, IPerformanceTracker
 
             var payload = new WebhookPayload
             {
-                EventName = $"{metricName} POST",
+                EventName = $".NET APM",
                 Message = JsonConvert.SerializeObject(performanceReport),
                 Status = "success",
                 Username = "channel"
