@@ -8,7 +8,6 @@ obj/
 *.pdb
 
 
-.vscode/
 *.user
 *.suo
 *.userosscache
@@ -58,3 +57,6 @@ secrets.json
 
 project.lock.json
 appsettings.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore

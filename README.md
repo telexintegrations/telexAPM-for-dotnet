@@ -180,6 +180,47 @@ await telex.TrackPerformanceAsync("Operation Name", timeSpan);
 | `BaseUrl`       | The base URL of the Telex service        |
 | `ChannelHookId` | The channel hook ID for your application |
 
+
+## Test Integration (HNG Mentors)
+
+To test the integration, follow these steps:
+
+### 1. Navigate to the Console Test Folder  
+Open a terminal and change the directory to the `TelexAPM.ConsoleTest` folder:
+
+```sh
+cd TelexAPM/TelexAPM.ConsoleTest
+```
+
+### 2. Create the `appsettings.json` File  
+
+Inside the `TelexAPM.ConsoleTest` folder, create a file named `appsettings.json` and add the following content:
+
+
+Run the following command in your terminal to create and edit the file:
+```sh
+nano appsettings.json
+```
+Then, paste the following JSON configuration:
+```json
+{
+  "Telex": {
+    "BaseUrl": "ping.telex.im/v1/webhooks", #this must be telex base-url for channels
+    "ChannelHookId": "YOUR_CHANNEL_HOOK_ID"
+  }
+}
+```
+Replace "YOUR_CHANNEL_HOOK_ID" with the actual channel hook ID.
+
+### 3. Run the Application  
+
+Once the `appsettings.json` file is in place, execute the following command to run the console test:
+
+```sh
+dotnet run
+```
+
+
 ## Telex Integration/Channel Configuration
 
 TelexAPM includes extensions for easy integration with ASP.NET Core applications and Standalone applications
